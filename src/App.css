@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.navhead {
+  text-decoration: none;
+  font-size: 36px !important;
+  letter-spacing: 10px !important;
+  font-weight: 600;
+  font-family: 'Young Serif', serif;
+  color: #cc27e9 !important;
+  margin-bottom: 0px !important;
+}
+
+/* App.css */
+.text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.text.show {
+  opacity: 1;
+}
+
+.intro {
+  line-height: 55px !important;
+  color: blueviolet;
+}
+
+.footername {
+  color: #c440cc;
+  font-size: 18px !important;
+  margin-left: 5px !important;
+  font-family: 'Young Serif', serif;
+  /* margin-top: 5px !important; */
+}
+
+.aboutcontainer,
+.resumecontainer {
+  background: #0f0f0f;
+  border: 2px solid white;
+  border-radius: 25px
+}
+
+.Front-end {
+  position: relative;
+}
+
+.Front-end::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  background-color: #c440cc;
+  left: 0;
+  top: -9px;
+}
+
+.My-skills {
+  position: relative;
+  font-size: 36px !important;
+}
+
+.My-skills::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  background-color: #c440cc;
+  left: 0;
+  top: -9px;
+
+}
+
+.more-about {
+  color: #cc27e9;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.myinfo ul li {
+  color: #c440cc;
+  line-height: 40px !important;
+}
+
+
+.bgColor {
+  background-color: black;
+  height: auto;
+  /* opacity: 0.9; */
+}
+
+.aboutdiv {
+  width: 75% !important;
+}
+
+.servicesdiv {
+  width: 75% !important;
+}
+
+.services-card {
+  color: white;
+  background: none !important;
+  border: 2px solid #c440cc;
+  border-radius: 10px !important;
+  padding: 15px 30px;
+}
+
+.services-card:hover {
+  background-color: #cc27e9 !important;
+  color: white !important;
+}
+
+/* Add these CSS transitions to your stylesheet */
+.about {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about.visible {
+  opacity: 1;
+}
+
+.Services-head,
+.Resume-head {
+  position: relative;
+  font-family: 'Young Serif', serif;
+}
+
+.Services-head::after,
+.Resume-head::after {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  background-color: #c440cc;
+  left: 0;
+  top: -9px;
+}
+
+.weather {
+  background-image: url('./images/weather.png') !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 230px !important;
+}
+
+.logistcs {
+  background-image: url('./images/Ar Logistics.png') !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 230px !important;
+}
+
+.quizcard {
+  background-image: url('./images/quiz.png') !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 230px !important;
+}
+
+.sunovacard {
+  background-image: url('./images/sunova.png') !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 230px !important;
+}
+
+.weather h1,
+.logistcs h1,
+.quizcard h1,
+.sunovacard h1 {
+  text-align: center !important;
+}
+
+.weathercard:hover,
+.ArLogistics-card:hover,
+.quizapp:hover,
+.sunova:hover {
+  background-color: #0f0f0f !important;
+  opacity: 0.8 !important;
+}
+
+.weathercard,
+.ArLogistics-card,
+.quizapp,
+.sunova {
+  background-color: #090909 !important;
+  opacity: 0.8 !important;
+  height: 230px !important;
+  border-radius: 0px !important;
+}
+
+.summary,
+.Education,
+.mycourses {
+  border-left: 1px solid #c440cc;
+  padding-left: 20px;
+  position: relative;
+}
+
+.summary::after,
+.Education::after,
+.mycourses::after {
+  content: '';
+  border: 1px solid #c440cc;
+  background-color: #c440cc;
+  width: 20px;
+  padding: 0px 10px;
+  border-radius: 50%;
+  position: absolute;
+  /* bottom: 50px; */
+  height: 21px;
+  top: 0px;
+  left: -11px;
+}
+
+.resume-intro {
+  font-family: 'Young Serif', serif;
+  font-size: 16px !important;
+  padding: 0px 30px 0px 0px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+@media screen and (max-width:992px) {
+  .intro {
+    font-size: 22px !important;
+  }
+
+  .myname {
+    font-size: 25px !important;
+  }
+
+  .navitem {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutdiv {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .navhead {
+    font-size: 26px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .mobilenav {
+    background-color: #00000054 !important;
+    color: white
+  }
+
+  .myimage {
+    display: none !important;
+  }
+
+  .col2 {
+    display: flex;
+    align-items: center;
+    height: 70vh
+  }
+
+  .aboutcol2 {
+    height: auto !important;
+    display: block !important;
+  }
+
+  .bodyimage {
+    background-image: url('./images/myimage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bodycolor {
+    background-color: black;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  .myname {
+    color: white !important;
+  }
+
+  .navhead {
+    color: rgb(206 0 255) !important;
+  }
+
+  .navcolor {
+    background-color: black !important;
+  }
+
+  .intro {
+    color: #c440cc !important;
+  }
+
+  .hambtn {
+    background-color: #cc27e9 !important;
+    border: none;
+  }
+
+  .footerdesign {
+    color: darkgrey;
+  }
+
+  .resumecontainer {
+    padding-left: 30px !important;
+    padding-right: 0px !important;
+  }
+
+  .resume-intro {
+    font-family: 'Young Serif', serif;
+    font-size: 13px !important;
+    padding: 0px 30px 0px 0px;
+    text-align: justify;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .navhead {
+    font-size: 20px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .intro {
+    font-size: 18px !important;
+  }
+
+  .more-about {
+    font-size: 14px;
+    padding: 0px 20px;
+  }
+
+  .Front-end {
+    padding: 0px 20px;
+    font-size: 22px;
+  }
+
+  .Front-end::after {
+    left: 21px !important;
+  }
+
+  .myinfo {
+    flex-direction: column !important;
+  }
+
+  .myinfo ul {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .more-about {
+    font-size: 12px;
+    padding: 0px 20px;
+  }
+
+  .Front-end {
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+
+  .My-skills {
+    font-size: 24px !important;
+  }
+
+  .weather h1,
+  .logistcs h1,
+  .quizcard h1,
+  .sunovacard h1 {
+    text-align: center !important;
+    font-size: 18px !important;
+  }
+
+  .resume-intro {
+    font-family: 'Young Serif', serif;
+    font-size: 10px !important;
+    padding: 0px 15px 0px 0px !important;
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  .bachelor ul li h4,
+  .intermediate ul li h4,
+  .matriculation ul li h4 {
+    font-size: 16px !important;
+  }
+
+  .bachelor ul li h3,
+  .intermediate ul li h3,
+  .matric ul li h3 {
+    font-size: 18px !important;
+  }
+
+  .bachelor ul li p,
+  .intermediate ul li p,
+  .matric ul li p {
+    font-size: 12px !important;
+  }
+
+  .duration {
+    width: 120px !important;
+  }
+  .resumepadding{
+    padding: 0px 1rem !important;
+  }
+}
